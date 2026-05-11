@@ -20,7 +20,7 @@ interface GHFile {
 const PASS_HASH_KEY = 'admin_auth'
 // Simple password check — change the password by updating this hash.
 // To generate: open browser console, run: btoa('yourpassword')
-const ENCODED_PASS = 'amV0c2V0Z28=' // default: "jetsetsgo" — change this!
+const ENCODED_PASS = 'Q29jb2JlbGxhMSE=' // default: "jetsetsgo" — change this!
 
 function btoa_str(s: string) {
   return btoa(
