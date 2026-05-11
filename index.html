@@ -10,17 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <script>
-      // Handle GitHub Pages SPA redirect
       (function() {
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect !== location.href) {
           history.replaceState(null, null, redirect);
-        }
-        // Also handle ?p= redirect from 404.html
-        var p = window.location.search.slice(1).split('&p=')[1];
-        if (p) {
-          history.replaceState(null, null, decodeURIComponent(p));
         }
       })();
     </script>
