@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "mlh-gemini-2025",
+    "title": "MLH Best Use of Gemini API — SBUHacks 2025",
+    "description": "Awarded by Major League Hacking at SBUHacks 2025 for Lectura, an AI-powered lecture notes tool built in 36 hours with a 3-person team. Lectura converts audio lecture recordings into AI-generated summaries, interactive flashcards, and translations across 50+ languages using the Gemini API.",
+    "url": "https://devpost.com/software/lectura-f3bxwo",
+    "date": "Nov 2025"
+  },
+  {
+    "id": "icalepcs-2025",
+    "title": "ICALEPCS 2025 — Conference Presentation",
+    "description": "Presented research on integrating Bluesky Queue Server with the Phoebus control system at the International Conference on Accelerator and Large Experimental Physics Control Systems (ICALEPCS 2025), one of the premier international venues for accelerator physics control systems research.",
+    "url": "https://indico.global/event/14049/contributions/135614/",
+    "date": "Oct 2025"
+  },
+  {
+    "id": "gtfh-scholar-2023",
+    "title": "Get There From Here Scholar — Suffolk County Community College",
+    "description": "Recipient of the Get There From Here Scholarship at SUNY Suffolk, a merit-based award supporting students from underrepresented and diverse backgrounds. Provides up to $6,500 annually toward tuition and fees, renewable across five semesters for students maintaining a 3.0+ GPA.",
+    "url": "https://www.sunysuffolk.edu/apply-enroll/scholarships/get-there-from-here/overview.jsp",
+    "date": "Sep 2023"
+  },
+  {
+    "id": "nsf-isuccess-2022",
+    "title": "NSF I-SUCCESS Scholar",
+    "description": "Selected as a scholar through an NSF S-STEM funded program at Suffolk County Community College, supporting academically talented students pursuing STEM degrees through financial aid, faculty mentoring, career development, and academic support resources.",
+    "date": "Sep 2022"
+  }
+]
