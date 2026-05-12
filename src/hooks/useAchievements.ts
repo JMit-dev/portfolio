@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { sortByDateDesc } from '../lib/sortByDate'
 
 export interface Achievement {
   id: string
@@ -21,7 +22,7 @@ export function useAchievements() {
         return r.json()
       })
       .then((data: Achievement[]) => {
-        setAchievements(data)
+        setAchievements(sortByDateDesc(data))
         setLoading(false)
       })
       .catch((err) => {

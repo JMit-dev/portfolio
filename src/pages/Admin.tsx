@@ -18,7 +18,7 @@ interface Achievement {
   id: string; title: string; description: string; image?: string; url?: string; date?: string
 }
 interface Game {
-  id: string; title: string; description: string; url: string; image?: string; tech: string[]
+  id: string; title: string; description: string; url: string; image?: string; tech: string[]; date?: string
 }
 interface GHFile { content: string; sha: string }
 
@@ -577,7 +577,7 @@ function AchievementsTab(props: { token: string; saving: boolean; setSaving: (v:
 
 // ── Games Tab ─────────────────────────────────────────────────────────────────
 
-const emptyGame: Game = { id: '', title: '', description: '', url: '', image: '', tech: [] }
+const emptyGame: Game = { id: '', title: '', description: '', url: '', image: '', tech: [], date: '' }
 
 function GamesTab(props: { token: string; saving: boolean; setSaving: (v: boolean) => void; setSaveMsg: (v: string) => void; uploadImage: (f: File, cb: (p: string) => void) => void }) {
   return (
@@ -597,7 +597,10 @@ function GamesTab(props: { token: string; saving: boolean; setSaving: (v: boolea
         <div className="flex flex-col gap-4">
           <Field label="Title"><input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={inputCls} placeholder="Game name" /></Field>
           <Field label="Description"><textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} rows={3} className="bg-bg-card border-2 border-bg-border focus:border-neon-green outline-none px-3 py-2 font-retro text-lg text-pixel-light resize-y w-full" placeholder="What is the game?" /></Field>
-          <Field label="URL (itch.io, GitHub, etc.)"><input value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} className={monoInputCls} placeholder="https://yourname.itch.io/game" /></Field>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Field label="URL (itch.io, GitHub, etc.)"><input value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} className={monoInputCls} placeholder="https://yourname.itch.io/game" /></Field>
+            <Field label="Date (optional)"><input value={form.date ?? ''} onChange={(e) => setForm({ ...form, date: e.target.value })} className={inputCls} placeholder="Nov 2025" /></Field>
+          </div>
           <Field label="Tech (comma-separated)"><input value={form.tech.join(', ')} onChange={(e) => setForm({ ...form, tech: e.target.value.split(',').map((t) => t.trim()).filter(Boolean) })} className={inputCls} placeholder="Godot, GDScript" /></Field>
           <Field label="Image">
             <div className="flex gap-2">

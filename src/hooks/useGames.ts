@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { sortByDateDesc } from '../lib/sortByDate'
 
 export interface Game {
   id: string
@@ -7,6 +8,7 @@ export interface Game {
   url: string
   image?: string
   tech: string[]
+  date?: string
 }
 
 export function useGames() {
@@ -16,7 +18,10 @@ export function useGames() {
   useEffect(() => {
     fetch('/games/index.json?' + Date.now())
       .then((r) => r.json())
-      .then((data: Game[]) => { setGames(data); setLoading(false) })
+      .then((data: Game[]) => {
+        setGames(sortByDateDesc(data))
+        setLoading(false)
+      })
       .catch(() => setLoading(false))
   }, [])
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { sortByDateDesc } from '../lib/sortByDate'
 
 export interface ProjectLinks {
   github?: string
@@ -32,7 +33,7 @@ export function useProjects() {
         return r.json()
       })
       .then((data: Project[]) => {
-        setProjects(data)
+        setProjects(sortByDateDesc(data))
         setLoading(false)
       })
       .catch((err) => {
