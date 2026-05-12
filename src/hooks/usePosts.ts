@@ -19,7 +19,7 @@ export function usePostList() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/posts/index.json')
+    fetch('/posts/index.json?' + Date.now())
       .then((r) => {
         if (!r.ok) throw new Error('Failed to fetch posts')
         return r.json()
@@ -47,7 +47,7 @@ export function usePost(slug: string) {
 
   useEffect(() => {
     if (!slug) return
-    fetch(`/posts/${slug}.md`)
+    fetch(`/posts/${slug}.md?t=${Date.now()}`)
       .then((r) => {
         if (!r.ok) throw new Error('Post not found')
         return r.text()
