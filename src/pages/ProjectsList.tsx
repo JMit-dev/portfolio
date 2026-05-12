@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useProjects } from '../hooks/useProjects'
-import { ExternalLink, FolderOpen, ArrowRight } from 'lucide-react'
-import { GithubIcon } from './SocialIcons'
+import { ExternalLink, ArrowLeft, FolderOpen } from 'lucide-react'
+import { GithubIcon } from '../components/SocialIcons'
 
 function ItchioIcon({ size = 15 }: { size?: number }) {
   return (
@@ -14,7 +14,6 @@ function ItchioIcon({ size = 15 }: { size?: number }) {
 
 const colorCycle = ['green', 'cyan', 'pink', 'yellow'] as const
 type Color = typeof colorCycle[number]
-
 const colorMap: Record<Color, { badge: string; text: string; shadow: string }> = {
   green:  { badge: 'badge-green', text: 'text-neon-green',  shadow: '4px 4px 0px #00ff87' },
   cyan:   { badge: 'badge',       text: 'text-neon-cyan',   shadow: '4px 4px 0px #00e5ff' },
@@ -22,42 +21,36 @@ const colorMap: Record<Color, { badge: string; text: string; shadow: string }> =
   yellow: { badge: 'badge-yellow',text: 'text-neon-yellow', shadow: '4px 4px 0px #ffd700' },
 }
 
-export default function Projects() {
+export default function ProjectsList() {
   const { projects, loading } = useProjects()
-  const visible = projects.slice(0, 3)
 
   return (
-    <section id="projects" className="py-20 px-4">
-      <div className="max-w-5xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="section-heading"
-        >
-          Projects
-        </motion.h2>
+    <div className="min-h-screen pt-20 px-4">
+      <div className="max-w-5xl mx-auto py-12">
+        <Link to="/#projects" className="inline-flex items-center gap-2 font-pixel text-[9px] text-pixel-dim hover:text-neon-green transition-colors mb-8">
+          <ArrowLeft size={12} /> Back
+        </Link>
+        <h1 className="font-pixel text-base neon-text-green mb-10">
+          All Projects<span className="animate-blink">_</span>
+        </h1>
 
-        {loading && <p className="font-pixel text-[9px] text-pixel-dim animate-pulse">&gt; Loading projects...</p>}
-
+        {loading && <p className="font-pixel text-[9px] text-pixel-dim animate-pulse">&gt; Loading...</p>}
         {!loading && projects.length === 0 && (
-          <div className="pixel-card p-10 text-center border-neon-green/20">
+          <div className="pixel-card p-10 text-center">
             <FolderOpen size={36} className="text-neon-green mx-auto mb-4 opacity-40" />
-            <p className="font-pixel text-[9px] text-neon-green mb-2">NO PROJECTS YET</p>
-            <p className="font-retro text-xl text-pixel-dim">Projects coming soon!</p>
+            <p className="font-retro text-xl text-pixel-dim">No projects yet.</p>
           </div>
         )}
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visible.map((proj, i) => {
+          {projects.map((proj, i) => {
             const c = colorMap[colorCycle[i % colorCycle.length]]
             return (
               <motion.div
                 key={proj.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.06 }}
                 className="pixel-card flex flex-col group border-bg-border"
                 onMouseEnter={(e) => (e.currentTarget.style.boxShadow = c.shadow)}
                 onMouseLeave={(e) => (e.currentTarget.style.boxShadow = '')}
@@ -69,7 +62,10 @@ export default function Projects() {
                   </div>
                 )}
                 <div className="p-4 flex flex-col flex-1">
-                  <h3 className={`font-pixel text-[9px] ${c.text} mb-2 leading-relaxed`}>{proj.title}</h3>
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className={`font-pixel text-[9px] ${c.text} leading-relaxed`}>{proj.title}</h3>
+                    {proj.date && <span className="font-mono text-xs text-pixel-dark flex-shrink-0">{proj.date}</span>}
+                  </div>
                   <p className="font-retro text-lg text-pixel-dim leading-snug mb-4 flex-1">{proj.description}</p>
                   {proj.tech.length > 0 && (
                     <div className="flex flex-wrap gap-1.5 mb-4">
@@ -79,7 +75,7 @@ export default function Projects() {
                   <div className="flex items-center gap-3 flex-wrap">
                     {proj.links.github && <a href={proj.links.github} target="_blank" rel="noopener noreferrer" className={`text-pixel-dim hover:${c.text} transition-colors`}><GithubIcon size={15} /></a>}
                     {proj.links.itchio && <a href={proj.links.itchio} target="_blank" rel="noopener noreferrer" className="text-pixel-dim hover:text-neon-pink transition-colors"><ItchioIcon size={15} /></a>}
-                    {proj.links.live && <a href={proj.links.live} target="_blank" rel="noopener noreferrer" className={`text-pixel-dim hover:${c.text} transition-colors`} aria-label="Live site"><ExternalLink size={14} /></a>}
+                    {proj.links.live && <a href={proj.links.live} target="_blank" rel="noopener noreferrer" className={`text-pixel-dim hover:${c.text} transition-colors`}><ExternalLink size={14} /></a>}
                     {proj.links.demo && <a href={proj.links.demo} target="_blank" rel="noopener noreferrer" className={`font-pixel text-[8px] ${c.text} hover:underline`}>demo</a>}
                     {proj.links.devpost && <a href={proj.links.devpost} target="_blank" rel="noopener noreferrer" className="font-pixel text-[8px] text-neon-cyan hover:underline">devpost</a>}
                     {proj.links.paper && <a href={proj.links.paper} target="_blank" rel="noopener noreferrer" className="font-pixel text-[8px] text-neon-yellow hover:underline">paper</a>}
@@ -89,15 +85,7 @@ export default function Projects() {
             )
           })}
         </div>
-
-        {projects.length > 3 && (
-          <div className="mt-6 text-center">
-            <Link to="/projects" className="pixel-btn inline-flex">
-              View All Projects <ArrowRight size={13} />
-            </Link>
-          </div>
-        )}
       </div>
-    </section>
+    </div>
   )
 }

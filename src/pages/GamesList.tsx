@@ -1,46 +1,40 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useGames } from '../hooks/useGames'
-import { Gamepad2, ExternalLink, ArrowRight } from 'lucide-react'
+import { Gamepad2, ExternalLink, ArrowLeft } from 'lucide-react'
 
-export default function Games() {
+export default function GamesList() {
   const { games, loading } = useGames()
-  const visible = games.slice(0, 3)
 
   return (
-    <section id="games" className="py-20 px-4">
-      <div className="max-w-5xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="section-heading"
-          style={{ color: '#ff00ff', textShadow: '0 0 8px rgba(255,0,255,0.6)' }}
-        >
-          Games
-        </motion.h2>
+    <div className="min-h-screen pt-20 px-4">
+      <div className="max-w-5xl mx-auto py-12">
+        <Link to="/#games" className="inline-flex items-center gap-2 font-pixel text-[9px] text-pixel-dim hover:text-neon-pink transition-colors mb-8">
+          <ArrowLeft size={12} /> Back
+        </Link>
+        <h1 className="font-pixel text-base mb-10" style={{ color: '#ff00ff', textShadow: '0 0 8px rgba(255,0,255,0.6)' }}>
+          All Games<span className="animate-blink">_</span>
+        </h1>
 
         {loading && <p className="font-pixel text-[9px] text-pixel-dim animate-pulse">&gt; Loading...</p>}
-
         {!loading && games.length === 0 && (
           <div className="pixel-card p-10 text-center border-neon-pink/20">
             <Gamepad2 size={40} className="text-neon-pink mx-auto mb-4 opacity-50" />
             <p className="font-pixel text-[9px] text-neon-pink mb-2">INSERT COIN</p>
-            <p className="font-retro text-xl text-pixel-dim">Games coming soon — check back later!</p>
+            <p className="font-retro text-xl text-pixel-dim">Games coming soon!</p>
           </div>
         )}
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visible.map((game, i) => (
+          {games.map((game, i) => (
             <motion.a
               key={game.id}
               href={game.url}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.08 }}
               className="block pixel-card pixel-card-pink flex flex-col group"
             >
               {game.image && (
@@ -53,6 +47,7 @@ export default function Games() {
                   <h3 className="font-pixel text-[9px] text-neon-pink leading-relaxed">{game.title}</h3>
                   <ExternalLink size={12} className="text-pixel-dim flex-shrink-0 mt-0.5" />
                 </div>
+                {game.date && <span className="font-mono text-xs text-pixel-dark mb-2">{game.date}</span>}
                 <p className="font-retro text-lg text-pixel-dim leading-snug mb-3 flex-1">{game.description}</p>
                 {game.tech.length > 0 && (
                   <div className="flex flex-wrap gap-1.5">
@@ -63,15 +58,7 @@ export default function Games() {
             </motion.a>
           ))}
         </div>
-
-        {games.length > 3 && (
-          <div className="mt-6 text-center">
-            <Link to="/games" className="pixel-btn pixel-btn-pink inline-flex">
-              View All Games <ArrowRight size={13} />
-            </Link>
-          </div>
-        )}
       </div>
-    </section>
+    </div>
   )
 }
