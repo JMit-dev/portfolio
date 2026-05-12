@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jordan Mitacek — Blog</title>
+    <link>https://jordanmitacek.com/blog</link>
+    <description>Thoughts on systems programming, games, and tech.</description>
+    <language>en-us</language>
+    <atom:link href="https://jordanmitacek.com/feed.xml" rel="self" type="application/rss+xml"/>
+    
+  <item>
+    <title><![CDATA[Buy a Japanese DSi LL in 2026, Not a Switch 2]]></title>
+    <link>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</link>
+    <guid>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</guid>
+    <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead — the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever.]]></description>
+  </item>
+  </channel>
+</rss>
