@@ -74,6 +74,13 @@ export const causes = [
     color: 'neon-cyan' as const,
     icon: '🌐',
   },
+  {
+    name: 'Internet Archive',
+    description: 'The library of the internet — preserving websites, software, games, books, and culture that would otherwise be lost forever.',
+    url: 'https://archive.org/',
+    color: 'neon-yellow' as const,
+    icon: '📚',
+  },
 ]
 
 export const experience = [
