@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id": "phoebus-olog-shift",
+    "title": "Phoebus Olog Shift Module",
+    "description": "Java plugin for the Phoebus control system that automatically attaches active shift metadata to electronic logbook entries via REST API. Used at NSLS-II at Brookhaven National Laboratory.",
+    "tech": ["Java", "Maven", "REST API", "Phoebus", "EPICS"],
+    "links": {
+      "github": "https://github.com/JMit-dev/phoebus-olog-shift-module"
+    },
+    "date": "Mar 2026"
+  },
+  {
+    "id": "dmwss",
+    "title": "DMWSS — Game Boy Emulator",
+    "description": "High-performance, modular Game Boy emulator in modern C++20. Features a cached instruction interpreter, software fastmem optimization, event-driven scheduling, and a mode-accurate PPU renderer with OpenGL support.",
+    "tech": ["C++20", "Qt6", "OpenGL", "CMake", "miniaudio"],
+    "links": {
+      "github": "https://github.com/JMit-dev/dmwss"
+    },
+    "date": "Dec 2025"
+  },
+  {
+    "id": "lectura",
+    "title": "Lectura",
+    "description": "AI-powered lecture notes tool built in 36 hours at SBUHacks 2025. Converts audio recordings into summaries, flashcards, and translations across 50+ languages. Won MLH Best Use of Gemini API.",
+    "tech": ["Python", "FastAPI", "React", "TypeScript", "Gemini AI", "Tailwind CSS"],
+    "links": {
+      "github": "https://github.com/JMit-dev/Lectura",
+      "devpost": "https://devpost.com/software/lectura-f3bxwo",
+      "demo": "https://www.youtube.com/watch?v=x9bLa1hhBkI"
+    },
+    "date": "Nov 2025"
+  },
+  {
+    "id": "chip8-tutorial",
+    "title": "CHIP-8 Educational Emulator",
+    "description": "Educational CHIP-8 emulator that visualizes internal CPU state, registers, memory, and the stack in real time as programs execute. Built to teach how emulators work from first principles.",
+    "image": "/images/projects/chip8emulator.png",
+    "tech": ["JavaScript", "HTML/CSS", "Canvas API"],
+    "links": {
+      "github": "https://github.com/JMit-dev/chip8-tutorial",
+      "live": "https://jmit-dev.github.io/chip8-tutorial/"
+    },
+    "date": "Oct 2025"
+  },
+  {
+    "id": "myrientdl",
+    "title": "MyrientDL",
+    "description": "Polite, resumable async web crawler and download manager for the Myrient game preservation archive. Features fuzzy search, SQLite tracking, and rate-limited downloads. Now defunct following the Myrient project shutdown.",
+    "tech": ["Python", "SQLite", "asyncio", "httpx", "Rich CLI", "Pydantic"],
+    "links": {
+      "github": "https://github.com/JMit-dev/myrientDL",
+      "live": "https://myrient-dl.vercel.app/"
+    },
+    "date": "Sep 2025"
+  },
+  {
+    "id": "phoebus-queueserver",
+    "title": "Phoebus Queue Server Application",
+    "description": "JavaFX client integrating Bluesky Queue Server into the Phoebus control system, enabling real-time plan management for beamline scientists at NSLS-II without leaving the Phoebus environment. Achieves 100% request success rate with 18.6ms mean response time.",
+    "image": "/images/projects/queueserver.png",
+    "tech": ["Java", "JavaFX", "REST API", "Bluesky QueueServer", "EPICS", "Phoebus"],
+    "links": {
+      "github": "https://github.com/JMit-dev/phoebus"
+    },
+    "date": "Jun 2025"
+  },
+  {
+    "id": "gl-portal",
+    "title": "OpenGL Portal Demo",
+    "description": "Real-time recursive portal rendering using OpenGL stencil buffers. Portals correctly display the view from the opposite side with proper depth handling and nested recursion.",
+    "image": "/images/projects/portal.png",
+    "tech": ["C++", "OpenGL", "GLSL", "CMake"],
+    "links": {
+      "github": "https://github.com/JMit-dev/GL_Portal",
+      "demo": "https://youtu.be/7IES3h4OTsI"
+    },
+    "date": "Apr 2025"
+  },
+  {
+    "id": "i8080-space-invaders",
+    "title": "Intel 8080 Space Invaders Emulator",
+    "description": "Cycle-accurate Intel 8080 CPU emulator running the original Space Invaders (1978) arcade game, complete with hardware-accurate timing, interrupt handling, and the original cabinet's dual-screen color overlay.",
+    "image": "/images/projects/i8080spaceinvaders.png",
+    "tech": ["C", "SDL2", "CMake"],
+    "links": {
+      "github": "https://github.com/JMit-dev/i8080-spaceinvaders-emulator"
+    },
+    "date": "Aug 2024"
+  },
+  {
+    "id": "termplayer",
+    "title": "termplayer",
+    "description": "Full-featured ASCII video player for the terminal. Converts video frames to ASCII art and plays them with synchronized audio using FFmpeg. Famous for playing Bad Apple in a terminal.",
+    "image": "/images/projects/badapple.png",
+    "tech": ["Python", "FFmpeg", "Curses"],
+    "links": {
+      "github": "https://github.com/JMit-dev/termplayer"
+    },
+    "date": "Aug 2024"
+  }
+]
