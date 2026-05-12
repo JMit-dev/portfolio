@@ -3,16 +3,105 @@
   <channel>
     <title>Jordan Mitacek — Blog</title>
     <link>https://jordanmitacek.com/blog</link>
-    <description>Thoughts on systems programming, games, and tech.</description>
+    <description>Thoughts on systems programming, games, consumer rights, and tech.</description>
     <language>en-us</language>
     <atom:link href="https://jordanmitacek.com/feed.xml" rel="self" type="application/rss+xml"/>
-    
-  <item>
-    <title><![CDATA[Buy a Japanese DSi LL in 2026, Not a Switch 2]]></title>
-    <link>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</link>
-    <guid>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</guid>
-    <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead â the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever.]]></description>
-  </item>
+
+    <item>
+      <title><![CDATA[What I Wish I Knew Before My First Research Internship]]></title>
+      <link>https://jordanmitacek.com/blog/what-i-wish-i-knew-before-my-first-research-internship</link>
+      <guid>https://jordanmitacek.com/blog/what-i-wish-i-knew-before-my-first-research-internship</guid>
+      <pubDate>Sun, 04 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Research internships are different from software engineering internships in ways that catch people off guard. Here's what I'd tell someone about to start their first one.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Going from Community College to a National Laboratory]]></title>
+      <link>https://jordanmitacek.com/blog/community-college-to-national-lab</link>
+      <guid>https://jordanmitacek.com/blog/community-college-to-national-lab</guid>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[I started at a community college with no research connections and ended up at Brookhaven National Laboratory. Here's the actual path, not the polished retrospective.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[How the Bluesky Framework Works (Not the Social Network)]]></title>
+      <link>https://jordanmitacek.com/blog/bluesky-framework-control-systems</link>
+      <guid>https://jordanmitacek.com/blog/bluesky-framework-control-systems</guid>
+      <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Bluesky is a Python-based framework for scientific experiment orchestration used at particle accelerators and synchrotrons worldwide. Here's what it actually does and why it exists.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[What Is EPICS and Why Does It Run Half the World's Particle Accelerators?]]></title>
+      <link>https://jordanmitacek.com/blog/what-is-epics</link>
+      <guid>https://jordanmitacek.com/blog/what-is-epics</guid>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[EPICS is open-source control system software that powers accelerators, telescopes, and nuclear reactors worldwide. It's also one of the most interesting pieces of infrastructure most programmers have never heard of.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Why You Should Mod Your 3DS in 2026]]></title>
+      <link>https://jordanmitacek.com/blog/mod-your-3ds-in-2026</link>
+      <guid>https://jordanmitacek.com/blog/mod-your-3ds-in-2026</guid>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The 3DS eShop is closed. The servers are going down. The only way to truly own your 3DS library is to mod it. Here's why you should and how to start.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[What It's Actually Like to Intern at a National Lab]]></title>
+      <link>https://jordanmitacek.com/blog/interning-at-a-national-lab</link>
+      <guid>https://jordanmitacek.com/blog/interning-at-a-national-lab</guid>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[National labs aren't like tech companies and they aren't like universities. They're something else entirely — and if you get the chance, you should go.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Writing Your First OpenGL Shader — What GLSL Actually Does]]></title>
+      <link>https://jordanmitacek.com/blog/writing-your-first-opengl-shader</link>
+      <guid>https://jordanmitacek.com/blog/writing-your-first-opengl-shader</guid>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Shaders are just programs that run on the GPU. Once you understand what they're actually doing, they stop being magic and start being one of the most fun things you can write.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[How a CPU Emulator Actually Works]]></title>
+      <link>https://jordanmitacek.com/blog/how-a-cpu-emulator-works</link>
+      <guid>https://jordanmitacek.com/blog/how-a-cpu-emulator-works</guid>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Writing an emulator sounds intimidating. It's mostly a giant switch statement. Here's how I built a CHIP-8 emulator that visualizes every internal component in real time.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[The Case for Physical Media — Why Digital-Only Is a Trap]]></title>
+      <link>https://jordanmitacek.com/blog/the-case-for-physical-media</link>
+      <guid>https://jordanmitacek.com/blog/the-case-for-physical-media</guid>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Digital is convenient. It's also fragile, revocable, and owned by someone else. Physical media is the only format where you actually keep what you paid for.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Stop Killing Games — What It Is and Why It Matters]]></title>
+      <link>https://jordanmitacek.com/blog/stop-killing-games</link>
+      <guid>https://jordanmitacek.com/blog/stop-killing-games</guid>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[You bought the game. You paid full price. Then the company deleted it from existence. Stop Killing Games is the campaign trying to make that illegal.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Emulation Is Preservation, Not Piracy]]></title>
+      <link>https://jordanmitacek.com/blog/emulation-is-preservation</link>
+      <guid>https://jordanmitacek.com/blog/emulation-is-preservation</guid>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The games industry wants you to believe emulation is theft. It isn't. It's the only reason anyone can still play most of gaming history.]]></description>
+    </item>
+
+    <item>
+      <title><![CDATA[Buy a Japanese DSi LL in 2025, Not a Switch 2]]></title>
+      <link>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</link>
+      <guid>https://jordanmitacek.com/blog/buy-a-japanese-dsi-ll-in-2026-not-a-switch-2</guid>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead — the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever.]]></description>
+    </item>
+
   </channel>
 </rss>

@@ -35,15 +35,21 @@ export default function Experience() {
                 </div>
 
                 {/* Company header */}
-                <a
-                  href={job.companyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-pixel text-[11px] text-neon-cyan hover:text-neon-green transition-colors mb-4 group"
-                >
-                  {job.company}
-                  <ExternalLink size={10} className="opacity-50 group-hover:opacity-100" />
-                </a>
+                {job.companyUrl ? (
+                  <a
+                    href={job.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-pixel text-[11px] text-neon-cyan hover:text-neon-green transition-colors mb-4 group"
+                  >
+                    {job.company}
+                    <ExternalLink size={10} className="opacity-50 group-hover:opacity-100" />
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center font-pixel text-[11px] text-neon-cyan mb-4">
+                    {job.company}
+                  </span>
+                )}
 
                 {/* Positions */}
                 <div className="flex flex-col gap-4">

@@ -20,7 +20,7 @@ export const siteConfig = {
 export const about = {
   bio: `I'm a Student Assistant at Brookhaven National Laboratory — a U.S. Department of Energy national lab — where I'm part of the team that builds and maintains software for scientists running experiments at the NSLS-II particle accelerator facility. I hold a Bachelor's in Computer Science. My day-to-day involves working on control systems, real-time data infrastructure, and the tools beamline operators rely on to run experiments.
 
-Outside of work I like building things from scratch. I've made CPU emulators, games, renderers, and whatever else catches my interest. When I'm not at a keyboard I'm usually lifting weights or playing guitar.`,
+Outside of work I like building things from scratch — CPU emulators, games, renderers, whatever catches my interest. When I'm not at a keyboard I'm usually lifting weights or playing guitar. I also try to give back where I can: I've volunteered at food pantries, helped run food drives and Toys for Tots in Patchogue, and gave campus tours to incoming students at Suffolk County Community College.`,
 
   skills: [
     'C / C++',
@@ -132,6 +132,22 @@ export const experience = [
         bullets: [
           'Built Raspberry Pi–based water quality monitoring system for environmental research',
           'Presented findings at SUNY Undergraduate Research Conference (SURC)',
+        ],
+      },
+    ],
+  },
+  {
+    company: 'Suffolk Music Center',
+    companyUrl: null,
+    positions: [
+      {
+        title: 'Music Instructor & Technology Support',
+        period: 'Nov 2020 – May 2024',
+        bullets: [
+          'Taught private violin, piano, and guitar lessons along with music theory to students of all ages and skill levels',
+          'Managed store inventory and customer records using Microsoft Access databases',
+          'Provided IT support including software troubleshooting, hardware maintenance, and internal tooling',
+          'Handled various operational responsibilities including scheduling, communications, and tech infrastructure',
         ],
       },
     ],
