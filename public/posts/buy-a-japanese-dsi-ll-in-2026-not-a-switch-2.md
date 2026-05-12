@@ -1,15 +1,16 @@
 ---
 title: "Buy a Japanese DSi LL in 2026, Not a Switch 2"
 date: "2026-05-12"
-excerpt: "The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead — the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever."
+excerpt: "The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead â the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever."
 tags: gaming, consumer rights, ds, nintendo, modding
-image: /images/blog/mii_portrait.png
+image: /images/blog/dsill.png
 ---
+
 
 The Switch 2 launched. It costs $450 for the console, $80 for games, and Nintendo is once again
 experimenting with how much they can extract from you before you notice. Meanwhile, somewhere on
 eBay or a Japanese auction site, a mint-condition DSi LL is sitting for $30-50, and it will
-give you access to one of the greatest game libraries ever assembled — a library Nintendo has
+give you access to one of the greatest game libraries ever assembled â a library Nintendo has
 decided you are not allowed to buy.
 
 Here's why you should buy the DSi LL instead.
@@ -29,7 +30,7 @@ has a menu in Japanese, but you won't be seeing that menu for long.
 
 This is not up for debate. The DSi LL has the largest, highest-quality screens of any DS
 hardware. The pixel density is lower than the original DS screens, which means pixels are
-visible — and on DS games, this actually looks *correct*. DS games were designed for screens
+visible â and on DS games, this actually looks *correct*. DS games were designed for screens
 at this size and viewing distance. The art direction on games like *Radiant Historia*, 
 *Strange Journey*, or *Castlevania: Dawn of Sorrow* was made to be seen this way.
 
@@ -79,7 +80,7 @@ handful of DS games, is now also dead. The 3DS eShop closed in 2023.
 There is no legal way to purchase the majority of DS games digitally in 2026. Nintendo has
 made no effort to bring the DS catalog to Switch, Switch 2, or any modern platform. Games
 like *Radiant Historia*, *Trauma Center*, *The World Ends With You* (the original, not the
-overpriced Switch port), *Solatorobo*, *Kirby: Mass Attack*, *Ghost Trick* — the list of
+overpriced Switch port), *Solatorobo*, *Kirby: Mass Attack*, *Ghost Trick* â the list of
 games you simply cannot buy from Nintendo goes on for hundreds of entries.
 
 Nintendo's official position, stated repeatedly through legal action and lobbying, is that
@@ -94,13 +95,13 @@ has abandoned them. Playing them on modded hardware is preservation.
 
 The DS library is enormous and it has aged remarkably well. Some highlights:
 
-**RPGs** — The DS is arguably the greatest handheld RPG platform ever made:
-- The entire mainline *Pokémon* DS era (Diamond, Pearl, Platinum, HeartGold, SoulSilver,
+**RPGs** â The DS is arguably the greatest handheld RPG platform ever made:
+- The entire mainline *PokÃ©mon* DS era (Diamond, Pearl, Platinum, HeartGold, SoulSilver,
   Black, White, Black 2, White 2)
-- *Radiant Historia* — one of the best JRPGs ever made, full stop
-- *Shin Megami Tensei: Strange Journey* — Atlus at their most uncompromising
+- *Radiant Historia* â one of the best JRPGs ever made, full stop
+- *Shin Megami Tensei: Strange Journey* â Atlus at their most uncompromising
 - *Etrian Odyssey* I, II, and III
-- *Dragon Quest* IV, V, VI, and IX — all of them excellent, all unavailable to purchase
+- *Dragon Quest* IV, V, VI, and IX â all of them excellent, all unavailable to purchase
 - *Final Fantasy Tactics A2*
 - *Chrono Trigger DS*
 - *Valkyrie Profile: Covenant of the Plume*
