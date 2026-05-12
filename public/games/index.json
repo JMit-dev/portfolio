@@ -1,11 +1,30 @@
 [
   {
+    "id": "mp2y4kxuobg1",
+    "title": "Mirror Mage",
+    "description": "chaotic 2-player online spell-casting duel. Pick up elemental spells and launch them at your opponent in a frantic battle of timing and luck. Spells bounce wildly off walls and platforms, and your aim wobbles unpredictably when you jump, making every shot a gamble. Deflect incoming projectiles with your orbiting mirror shield before it breaks.",
+    "url": "https://mirror-mage.web.app/",
+    "image": "/images/games/mirror-mage.png",
+    "tech": [
+      "TypeScript",
+      "Wolfie2D",
+      "WebGL",
+      "WebRTC"
+    ],
+    "date": "May 2026"
+  },
+  {
     "id": "spy-master",
     "title": "Spy Master",
     "description": "Top-down adventure game with exploration, combat, and NPC interaction. Features A* pathfinding, Goal-Oriented Action Planning (GOAP) AI, inventory system, and Tiled level editor integration.",
     "url": "https://github.com/JMit-dev/spy-master",
     "image": "/images/games/spymaster.png",
-    "tech": ["TypeScript", "Wolfie2D", "WebGL", "Node.js"],
+    "tech": [
+      "TypeScript",
+      "Wolfie2D",
+      "WebGL",
+      "Node.js"
+    ],
     "date": "Apr 2026"
   },
   {
@@ -14,7 +33,11 @@
     "description": "Side-scrolling platformer with physics-based movement, a particle weapon system, destructible tilemaps, and finite state machine AI enemies.",
     "url": "https://github.com/JMit-dev/master-blaster",
     "image": "/images/games/masterblaster.png",
-    "tech": ["TypeScript", "Wolfie2D", "WebGL"],
+    "tech": [
+      "TypeScript",
+      "Wolfie2D",
+      "WebGL"
+    ],
     "date": "Mar 2026"
   },
   {
@@ -23,16 +46,23 @@
     "description": "Infinite scroller where you pilot a submarine dodging mines and collecting air bubbles to survive. Features custom WebGL shader effects, object pooling, and a seed-based game recording and replay system.",
     "url": "https://github.com/JMit-dev/the-yellow-submarine",
     "image": "/images/games/submarine.png",
-    "tech": ["TypeScript", "Wolfie2D", "WebGL"],
+    "tech": [
+      "TypeScript",
+      "Wolfie2D",
+      "WebGL"
+    ],
     "date": "Feb 2026"
   },
   {
     "id": "wizards-last-stand",
     "title": "Wizard's Last Stand",
-    "description": "Tower defense survival game where you play as a wizard casting spells against endless waves of zombies. Place spell towers to defend your base, survive infinite rounds across 2 levels — one single-floor, one two-floor.",
+    "description": "Tower defense survival game where you play as a wizard casting spells against endless waves of zombies. Place spell towers to defend your base, survive infinite rounds across 2 levels â one single-floor, one two-floor.",
     "url": "https://github.com/JMit-dev/WizardsLastStand",
     "image": "/images/games/wizardslaststand.png",
-    "tech": ["Unreal Engine", "C++"],
+    "tech": [
+      "Unreal Engine",
+      "C++"
+    ],
     "date": "Dec 2025"
   },
   {
@@ -40,7 +70,11 @@
     "title": "WolfieCart",
     "description": "Kart racing game built in Unreal Engine. Race against 3 AI opponents across 3 laps to win. Windows platform.",
     "url": "https://github.com/JMit-dev/WolfieCart",
-    "tech": ["Unreal Engine", "C++", "Windows"],
+    "tech": [
+      "Unreal Engine",
+      "C++",
+      "Windows"
+    ],
     "date": "Oct 2025"
   }
 ]
