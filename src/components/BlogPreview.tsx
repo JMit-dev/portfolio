@@ -70,7 +70,7 @@ export default function BlogPreview() {
                 <Link to={`/blog/${post.slug}`} className="block pixel-card pixel-card-cyan h-full p-5 group">
                   {/* Mii avatar */}
                   <div className="flex items-center gap-2 mb-3">
-                    <img src="/mii.jpg" alt="Jordan Mii" className="w-7 h-7 object-cover border border-neon-cyan/30" />
+                    <img src="/mii_portrait.png" alt="Jordan Mii" className="w-7 h-7 object-cover border border-neon-cyan/30" />
                     <span className="font-pixel text-[8px] text-pixel-dim">{formatDate(post.date)}</span>
                   </div>
 

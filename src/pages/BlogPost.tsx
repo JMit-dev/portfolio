@@ -50,7 +50,7 @@ export default function BlogPost() {
 
         {/* Meta */}
         <div className="flex flex-wrap items-center gap-4 mb-6">
-          <img src="/mii.jpg" alt="Jordan" className="w-10 h-10 object-cover border-2 border-neon-cyan/30" />
+          <img src="/mii_portrait.png" alt="Jordan" className="w-10 h-10 object-cover border-2 border-neon-cyan/30" />
           <div className="flex flex-col gap-1">
             <span className="font-pixel text-[8px] text-neon-green">Jordan Mitacek</span>
             <span className="flex items-center gap-1 font-mono text-xs text-pixel-dim">

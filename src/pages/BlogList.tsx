@@ -55,7 +55,7 @@ export default function BlogList() {
             >
               <Link to={`/blog/${post.slug}`} className="block pixel-card pixel-card-cyan p-6 group">
                 <div className="flex items-center gap-3 mb-3">
-                  <img src="/mii.jpg" alt="Jordan" className="w-8 h-8 object-cover border border-neon-cyan/30" />
+                  <img src="/mii_portrait.png" alt="Jordan" className="w-8 h-8 object-cover border border-neon-cyan/30" />
                   <div>
                     <div className="font-pixel text-[8px] text-pixel-dim">{formatDate(post.date)}</div>
                   </div>
