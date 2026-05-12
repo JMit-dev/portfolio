@@ -1,16 +1,95 @@
 [
   {
+    "slug": "what-i-wish-i-knew-before-my-first-research-internship",
+    "title": "What I Wish I Knew Before My First Research Internship",
+    "date": "2026-05-04",
+    "excerpt": "Research internships are different from software engineering internships in ways that catch people off guard. Here's what I'd tell someone about to start their first one.",
+    "tags": ["career", "internship", "research", "advice"]
+  },
+  {
+    "slug": "community-college-to-national-lab",
+    "title": "Going from Community College to a National Laboratory",
+    "date": "2026-04-05",
+    "excerpt": "I started at a community college with no research connections and ended up at Brookhaven National Laboratory. Here's the actual path, not the polished retrospective.",
+    "tags": ["career", "community college", "research", "brookhaven"]
+  },
+  {
+    "slug": "bluesky-framework-control-systems",
+    "title": "How the Bluesky Framework Works (Not the Social Network)",
+    "date": "2026-03-22",
+    "excerpt": "Bluesky is a Python-based framework for scientific experiment orchestration used at particle accelerators and synchrotrons worldwide. Here's what it actually does and why it exists.",
+    "tags": ["bluesky", "scientific computing", "epics", "controls", "python"],
+    "image": "/images/blog/bluesky.png"
+  },
+  {
+    "slug": "mod-your-3ds-in-2026",
+    "title": "Why You Should Mod Your 3DS in 2026",
+    "date": "2026-01-10",
+    "excerpt": "The 3DS eShop is closed. The servers are going down. The only way to truly own your 3DS library is to mod it. Here's why you should and how to start.",
+    "tags": ["gaming", "3ds", "nintendo", "modding", "consumer rights"],
+    "image": "/images/blog/3ds.jpg"
+  },
+  {
+    "slug": "interning-at-a-national-lab",
+    "title": "What It's Actually Like to Intern at a National Lab",
+    "date": "2025-12-01",
+    "excerpt": "National labs aren't like tech companies and they aren't like universities. They're something else entirely — and if you get the chance, you should go.",
+    "tags": ["career", "internship", "brookhaven", "research"]
+  },
+  {
+    "slug": "writing-your-first-opengl-shader",
+    "title": "Writing Your First OpenGL Shader — What GLSL Actually Does",
+    "date": "2025-11-15",
+    "excerpt": "Shaders are just programs that run on the GPU. Once you understand what they're actually doing, they stop being magic and start being one of the most fun things you can write.",
+    "tags": ["graphics", "opengl", "glsl", "systems programming"],
+    "image": "/images/blog/opengl-triangle.png"
+  },
+  {
+    "slug": "how-a-cpu-emulator-works",
+    "title": "How a CPU Emulator Actually Works",
+    "date": "2025-10-22",
+    "excerpt": "Writing an emulator sounds intimidating. It's mostly a giant switch statement. Here's how I built a CHIP-8 emulator that visualizes every internal component in real time.",
+    "tags": ["emulation", "systems programming", "chip8", "low-level"],
+    "image": "/images/blog/chip8emulator.png"
+  },
+  {
+    "slug": "the-case-for-physical-media",
+    "title": "The Case for Physical Media — Why Digital-Only Is a Trap",
+    "date": "2025-09-08",
+    "excerpt": "Digital is convenient. It's also fragile, revocable, and owned by someone else. Physical media is the only format where you actually keep what you paid for.",
+    "tags": ["gaming", "consumer rights", "physical media", "ownership"],
+    "image": "/images/blog/physical-media.jpg"
+  },
+  {
+    "slug": "stop-killing-games",
+    "title": "Stop Killing Games — What It Is and Why It Matters",
+    "date": "2025-08-03",
+    "excerpt": "You bought the game. You paid full price. Then the company deleted it from existence. Stop Killing Games is the campaign trying to make that illegal.",
+    "tags": ["gaming", "consumer rights", "stop killing games", "preservation"],
+    "image": "/images/blog/stop-killing-games.png"
+  },
+  {
+    "slug": "emulation-is-preservation",
+    "title": "Emulation Is Preservation, Not Piracy",
+    "date": "2025-07-12",
+    "excerpt": "The games industry wants you to believe emulation is theft. It isn't. It's the only reason anyone can still play most of gaming history.",
+    "tags": ["gaming", "emulation", "preservation", "consumer rights"],
+    "image": "/images/blog/emulation.jpg"
+  },
+  {
     "slug": "buy-a-japanese-dsi-ll-in-2026-not-a-switch-2",
     "title": "Buy a Japanese DSi LL in 2026, Not a Switch 2",
-    "date": "2026-05-12",
-    "excerpt": "The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead â the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever.",
-    "tags": [
-      "gaming",
-      "consumer rights",
-      "ds",
-      "nintendo",
-      "modding"
-    ],
+    "date": "2025-06-05",
+    "excerpt": "The Switch 2 is here and it costs $450. Here's why you should spend $40 on a Japanese DSi LL instead — the best DS hardware ever made, a timeless game library Nintendo refuses to sell you, and a mod scene that keeps it alive forever.",
+    "tags": ["gaming", "consumer rights", "ds", "nintendo", "modding"],
     "image": "/images/blog/dsill.png"
+  },
+  {
+    "slug": "what-is-epics",
+    "title": "What Is EPICS and Why Does It Run Half the World's Particle Accelerators?",
+    "date": "2026-02-14",
+    "excerpt": "EPICS is open-source control system software that powers accelerators, telescopes, and nuclear reactors worldwide. It's also one of the most interesting pieces of infrastructure most programmers have never heard of.",
+    "tags": ["epics", "controls", "scientific computing", "systems"],
+    "image": "/images/blog/epics.png"
   }
 ]
